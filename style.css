@@ -2,4 +2,34 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: tomato;
 }
+
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+   /* Set a specific color for each brand om du skulle vilja styla dom mer så ser det ut såhär
+Facebook 
+  .fa-facebook {
+     color: white;
+  }
+  
+  Instagram
+  .fa-instagram {
+    color: white;
+  }
+  */
+
