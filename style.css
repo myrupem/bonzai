@@ -2,14 +2,17 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #FAFAFA;
     font-family: Nunito, Helvetica, sans-serif;
     font-weight: lighter;
 }
 
-/* Header styling*/
+/* ----- Header styling ----- */
 
 .header {
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
     display: flex;
     height: 150px;
     width: 100%;
@@ -19,7 +22,6 @@
 }
 
 .header__logo {
-    background-color: #D9D9D9;
     float: left;
     max-width: 100px;
     max-height: 100px;
@@ -29,13 +31,12 @@
 
 .header__logo-name {
     color: #181A20;
-    background-color: #D9D9D9;
     font-size: 35px;
+    text-decoration: none;
     
 }
 
 .header__list-wrapper {
-    background-color: #D9D9D9;
     width: 70%;
     display: flex;
     align-items: center;
@@ -45,7 +46,6 @@
 }
 
 .header__nav-list {
-    background-color: #D9D9D9;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -56,7 +56,6 @@
 }
 
 .header__nav-title {
-    background-color: #D9D9D9;
     color: #181A20;
     list-style: none;
     font-size: 20px;
@@ -79,7 +78,192 @@
     border: none;
 }
 
-/* Hero styling */
+.fa-search:hover {
+    cursor: pointer;
+}
 
 
+/* ----**** LANDING PAGE ****----- */
 
+/* ---- Hero styling ----- */
+
+.hero-image {
+    background-image: url("bonzai-assets/assets/photos/09-day.jpg");
+    
+    /* om jag vill ha svart gradient bakgrund på bilden*/
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))*/
+
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+.hero__welcome-text {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 1em 6em;
+
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero__button {
+    background-color: white;
+    opacity: 80%;
+    border: none;
+    color: #181A20;
+    border-radius: 1px;
+    padding: 0.5em 3em;
+
+    text-decoration: none;
+    font-size: 30px;
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.hero__button:hover {
+    background-color: white;
+    opacity: 100%;
+
+    cursor: pointer;
+}
+
+
+/* ---- Landing styling ----- */
+
+.landing-card {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.landing-card__title {
+    font-size: 70px;
+    text-align: center;
+    padding: 3rem 25%;
+}
+
+.landing-card__text {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 25% 3rem 25%;
+}
+
+.landing-card__image {
+    width: 100vw;
+    height: auto;
+} 
+
+
+/* Om jag vill göra bilderna scrollbara o försvinna!!
+.landing-card__image {
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    background-image: url("bonzai-assets/assets/photos/08-day.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+}
+    */
+
+
+/* ----**** ABOUT PAGE ****----- */
+
+.about__background {
+    background-color: white;
+    opacity: 95%;
+
+    background-image: url("bonzai-assets/assets/photos/08-day.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;   
+    margin: 10em 15rem;
+    padding: 3em 10rem;
+}
+
+.about__title {
+    font-size: 70px;
+    margin-bottom: 2rem;
+}
+
+.about__text {
+    font-size: 20;
+    margin-bottom: 2rem;
+}
+
+/* ------- Footer styling -------- */
+
+.footer {
+    background-color: #1F222A;
+    color: #FAFAFA;
+    min-height: 260px;
+    min-width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.footer__column1, .footer__column2, .footer__column3 {
+    flex-wrap: wrap;
+    min-width: 150px;
+    display: flex;
+
+    margin-right: 3rem;
+}
+
+.footer__column1 {
+    flex-direction: column;
+}
+
+.footer__column2 {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 8em;
+}
+
+.footer__column3 {
+    align-items: flex-end;
+    margin-bottom: 1.5em;
+}
+
+.fa-facebook, .fa-instagram {
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.footer__title {
+    font-size: 30px;
+}
+
+.footer__subtitle {
+    font-weight: 20px;
+    margin-bottom: 1em;
+}
+
+.footer__text {
+    font-size: 16px;
+}
+
+.footer__logo {
+    justify-content: flex-end;
+    max-width: 188px;
+    max-height: 188px;
+    margin-left: auto;
+}
