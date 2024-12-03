@@ -1,0 +1,28 @@
+
+
+.about__background {
+    background-color: white;
+    opacity: 95%;
+
+    background-image: url("bonzai-assets/assets/photos/08-day.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;   
+    margin: 10em 15rem;
+    padding: 3em 10rem;
+}
+
+.about__title {
+    font-size: 70px;
+    margin-bottom: 2rem;
+}
+
+.about__text {
+    font-size: 20;
+    margin-bottom: 2rem;
+}
