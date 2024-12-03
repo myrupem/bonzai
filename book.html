@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Book</title>
 </head>
 <body>
-    <header>
-        <nav class="header-menu">
-            <img src="bonzai-assets\assets\logo\bonz.ai-logo-white-symbol.png" alt="Bonzai Logo">
-            <a href="./index.html">Home</a>
-            <p>Event</p>
-            <p>Offers & Packages</p>
-            <a href="./about.html">About Us</a>
-            <button type="submit"><i class="fa fa-search"></i></button>
+    <header class="header">
+        <img class="header__logo" src="bonzai-assets\assets\logo\bonz.ai-logo-white-symbol.png" alt="Bonzai Logo">
+        <h1 class="header__logo-name">Bonz.ai</h1>
+        <nav class="header__list-wrapper">
+            <ul class="header__nav-list"> 
+                <li><a href="./index.html" class="header__nav-title">Home</a></li>
+                <li><a href="#" class="header__nav-title">Event</a></li>
+                <li><a href="#" class="header__nav-title">Offers & Packages</a></li>
+                <li><a href="./about.html" class="header__nav-title">About Us</a></li>
+            </ul>
+        <button type="submit" class="header__search-button"><i class="fa fa-search fa-4x"></i></button>
         </nav>
     </header>
 
