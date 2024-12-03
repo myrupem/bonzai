@@ -18,7 +18,7 @@
         <nav class="header__list-wrapper">
             <ul class="header__nav-list"> 
                 <li><a href="./index.html" class="header__nav-title">Home</a></li>
-                <li><a href="#" class="header__nav-title">Event</a></li>
+                <li><a href="./book.html" class="header__nav-title">Booking</a></li>
                 <li><a href="#" class="header__nav-title">Offers & Packages</a></li>
                 <li><a href="./about.html" class="header__nav-title">About Us</a></li>
             </ul>
@@ -26,7 +26,7 @@
         </nav>
     </header>
 
-    <img src="bonzai-assets\receptionists -Image by Rodrigo Salomón Cañas from Pixabay.jpg" alt="Image of receptionist by Rodrigo Salomón Cañas from Pixabay" class="hero__background-image">
+    <img class="book-hero" src="bonzai-assets\receptionists -Image by Rodrigo Salomón Cañas from Pixabay.jpg" alt="Image of receptionist by Rodrigo Salomón Cañas from Pixabay" class="hero__background-image">
     
     <article class="book-card"> 
         <p class="book-card__title">Book your stay with us today!</p>
@@ -46,48 +46,61 @@
         </section>
         <button class="book-card__book-now-button">BOOK NOW</button>
     </article>
+
    <p class="room-title">Availible Rooms</p>
    <p class="room-subtitle"></p>
 
    <article class="room-card">
-    <img src="bonzai-assets\assets\photos\05-day.jpg" alt="Picture of a room with a sofa">
+    <img class="room-card__image" src="bonzai-assets\assets\photos\05-day.jpg" alt="Picture of a room with a sofa">
     <p class="room-card__name">Forest Retreat</p>
     <p class="room-card__text">Inspired by Nordic forests, this room features recycled wood panels and a soothing cedarwood aroma. Large panoramic windows invite nature inside, while living plant walls purify the air. Textiles are made from organic cotton and linen, and a digital guide to forest bathing enhances relaxation.</p>
-    <i class="fa fa-bed"></i> <!-- fontawesome icons --> 
-    <i class="fa fa-shower"></i> <!-- fontawesome icons FUNKARV EJJJ!!!--> 
-    <i class="fa fa-clock"></i> <!-- fontawesome icons --> 
+    <div class="room-card__icons">
+        <i class="fa fa-bed fa-2x"></i> <!-- fontawesome icons --> 
+        <i class="fa fa-shower fa-2x"></i> <!-- fontawesome icons FUNKARV EJJJ!!!--> 
+        <i class="fa fa-clock fa-2x"></i> <!-- fontawesome icons --> 
+    </div> 
     <button class="room-card__button">Read More</button>
    </article>
 
    <article class="room-card">
-    <img src="bonzai-assets\assets\photos\03-day.jpg" alt="Picture of a window in sunset">
+    <img class="room-card__image" src="bonzai-assets\assets\photos\03-day.jpg" alt="Picture of a window in sunset">
     <p class="room-card__name">Tech Oasis</p>
     <p class="room-card__text">This modern room combines sleek design with cutting-edge technology. A smart system adjusts temperature, lighting, and sound to your preference. Sustainable materials like recycled plastic and bamboo are used throughout. Virtual windows display customizable landscapes, and the room is powered by energy-efficient solar panels.</p>
-    <i class="fa fa-bed"></i> <!-- fontawesome icons --> 
-    <i class="fa fa-shower"></i> <!-- fontawesome icons FUNKARV EJJJ!!!--> 
-    <i class="fa fa-clock"></i> <!-- fontawesome icons --> 
+    <div class="room-card__icons">
+        <i class="fa fa-bed fa-2x"></i> <!-- fontawesome icons --> 
+        <i class="fa fa-shower fa-2x"></i> <!-- fontawesome icons FUNKARV EJJJ!!!--> 
+        <i class="fa fa-clock fa-2x"></i> <!-- fontawesome icons --> 
+    </div>
     <button class="room-card__button">Read More</button>
    </article>
 
    <article class="room-card">
-    <img src="bonzai-assets\assets\photos\08-day.jpg" alt="Picture of a fireplace by the window">
+    <img class="room-card__image" src="bonzai-assets\assets\photos\08-day.jpg" alt="Picture of a fireplace by the window">
     <p class="room-card__name">Sustainable Harmony</p>
     <p class="room-card__text">Designed for eco-conscious guests, this room uses natural, locally sourced materials like stone, wood, and wool. It’s carbon-neutral, with geothermal heating and water-saving rain showers. Guests can explore sustainable travel tips through an app and enjoy organic minibar options.</p>
-    <i class="fa fa-bed"></i> <!-- fontawesome icons --> 
-    <i class="fa fa-shower"></i> <!-- fontawesome icons FUNKARV EJJJ!!!--> 
-    <i class="fa fa-clock"></i> <!-- fontawesome icons --> 
+    <div class="room-card__icons">
+        <i class="fa fa-bed fa-2x"></i> <!-- fontawesome icons --> 
+        <i class="fa fa-shower fa-2x"></i> <!-- fontawesome icons FUNKARV EJJJ!!!--> 
+        <i class="fa fa-clock fa-2x"></i> <!-- fontawesome icons --> 
+    </div> 
     <button class="room-card__button">Read More</button>
    </article>
 
-    <footer class="footer">
-        <p class="footer__title">Contact us</p>
-        <p class="footer__subtitle">Bonz.ai</p>
-        <p class="footer__adress">Address: <br>Bonz.ai Hotel <br>Greenway 12 <br>112 34 Stockholm, Sweden</p>
-        <p class="footer__email">Email: info@bonz.ai</p>
-        <p class="footer__phone">Phone: +46 (0)8 123 456 78</p>
-        <a href="#" class="fa fa-facebook"></a>  <!-- fontawesome icons --> 
-        <a href="#" class="fa fa-instagram"></a> <!-- fontawesome icons --> 
-        <img src="bonzai-assets\assets\logo\bonz.ai-logo-white-symbol.png" alt="Bonzai Logo">
-    </footer>
+   <footer class="footer">
+    <section class="footer__column1"> 
+        <h2 class="footer__title">Contact us</h2>
+        <h3 class="footer__subtitle">Bonz.ai</h3>
+        <p class="footer__text">Address: <br>Bonz.ai Hotel <br>Greenway 12 <br>112 34 Stockholm, Sweden</p>
+    </section> <!-- footer__column1 end -->
+    <section class="footer__column2"> 
+        <p class="footer__text">Email: info@bonz.ai</p>
+        <p class="footer__text">Phone: +46 (0)8 123 456 78</p>
+    </section> <!-- footer__column2 end -->
+    <section class="footer__column3"> 
+        <a href="#" class="fa fa-facebook fa-2x"></a>  <!-- fontawesome icons --> 
+        <a href="#" class="fa fa-instagram fa-2x"></a> <!-- fontawesome icons --> 
+    </section> <!-- footer__column3 end -->
+    <img class="footer__logo" src="bonzai-assets\assets\logo\bonz.ai-logo-white-symbol.png" alt="Bonzai Logo">
+</footer>
 </body>
 </html>

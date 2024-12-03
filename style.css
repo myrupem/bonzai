@@ -189,7 +189,6 @@
     justify-content: center; 
     align-items: center; 
     flex-direction: column;
-    
 }
 
 .about__background {
@@ -212,6 +211,78 @@
     font-size: 20px;
     margin-bottom: 2rem;
     z-index: 2;
+}
+
+/* ----**** BOOK PAGE ****----- */
+/* ---- Hero styling ----- */
+.book-hero {
+    background-image: url("bonzai-assets/receptionists -Image by Rodrigo Salomón Cañas from Pixabay.jpg");
+    
+    /* om jag vill ha svart gradient bakgrund på bilden*/
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))*/
+
+    height: auto;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* ---- Room Card ----- */
+.room-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 3rem;
+}
+
+.room-card__image {
+    width: 100vw;
+}
+
+.room-card__name {
+    font-size: 70px;
+    padding: 3rem 25%;
+    text-align: center;
+}
+
+.room-card__text {
+    font-size: 30px;
+    text-align: center;
+    padding: 0 25% 3rem 25%;
+}
+
+.room-card__icons {
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+}
+
+.fa-shower {
+    margin: 0 1rem;
+}
+
+.room-card__button {
+    background-color: #1F222A;
+    opacity: 95%;
+    border: none;
+    color: white;
+    border-radius: 1px;
+    padding: 0.5em 3em;
+
+    text-decoration: none;
+    font-size: 45px;
+}
+
+.room-card__button:hover {
+    background-color: #1F222A;
+    opacity: 100%;
+
+    cursor: pointer;
 }
 
 /* ------- Footer styling -------- */
