@@ -119,9 +119,9 @@
     color: #181A20;
     border-radius: 1px;
     padding: 0.5em 3em;
-
     text-decoration: none;
     font-size: 30px;
+
     position: absolute;
     top: 80%;
     left: 20%;
@@ -221,7 +221,7 @@
     /* om jag vill ha svart gradient bakgrund på bilden*/
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))*/
 
-    height: auto;
+    height: 100vh;
     width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
@@ -229,6 +229,104 @@
     position: relative;
 }
 
+.book-card {
+    display: grid;
+    grid-template-areas: 
+    "title title"
+    "in out"
+    "nr nr"
+    "book book";
+
+    column-gap: 10px;
+     row-gap: 10px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #F5F5FF;
+    opacity: 50%;
+    width: auto;
+    height: auto;
+    padding: 1em;
+}
+
+.book-card__title {
+    grid-area: title;
+    font-size: 25px;
+    text-align: center;
+}
+
+.book-card__text {
+    font-size: 25px;
+    padding: 0;
+}
+
+.book-card__dates {
+    background-color: #D9D9D9;
+    opacity: 100%;
+    width: 160px;
+    text-align: center;
+    padding: 1em;
+}
+
+.book-card__in {
+    grid-area: in;
+}
+
+.book-card__out {
+    grid-area: out;
+}
+
+.book-card__date {
+    font-size: 50px;
+}
+
+.book-card__guest-nr {
+    grid-area: nr;
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 20px;
+    background-color: #D9D9D9;
+    opacity: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.fa-chevron-down {
+    font-size: 25px;
+}
+
+.book-card__book-button {
+    grid-area: book;
+
+    background-color: #D9D9D9;
+    opacity: 100%;
+    border: none;
+    color: #181A20;
+    border-radius: 1px;
+    padding: 0.5em 3em;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/* ---- Room Title ----- */
+.room-title__container {
+    text-align: center;
+    color: #181A20;
+
+    margin: 3rem;
+}
+
+.room-title {
+    font-size: 70px;
+}
+
+.room-subtitle {
+    font-size: 40px;
+}
 
 /* ---- Room Card ----- */
 .room-card {
@@ -251,7 +349,7 @@
 }
 
 .room-card__text {
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     padding: 0 25% 3rem 25%;
 }
@@ -267,15 +365,14 @@
 }
 
 .room-card__button {
-    background-color: #1F222A;
-    opacity: 95%;
+    background-color: #181A20;
+    opacity: 80%;
     border: none;
     color: white;
     border-radius: 1px;
     padding: 0.5em 3em;
-
     text-decoration: none;
-    font-size: 45px;
+    font-size: 30px;
 }
 
 .room-card__button:hover {
