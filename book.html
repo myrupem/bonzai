@@ -7,13 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2e5eece600.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Book</title>
 </head>
 <body>
     <header class="header">
-        <img class="header__logo" src="bonzai-assets\assets\logo\bonz.ai-logo-white-symbol.png" alt="Bonzai Logo">
+        <a href="./index.html"><img class="header__logo" src="bonzai-assets\assets\logo\bonz.ai-logo-white-symbol.png" alt="Bonzai Logo"></a>
         <h1 class="header__logo-name">Bonz.ai</h1>
         <nav class="header__list-wrapper">
             <ul class="header__nav-list"> 
@@ -22,19 +22,20 @@
                 <li><a href="#" class="header__nav-title">Offers & Packages</a></li>
                 <li><a href="./about.html" class="header__nav-title">About Us</a></li>
             </ul>
-        <button type="submit" class="header__search-button"><i class="fa fa-search fa-4x"></i></button>
+            <button type="submit" class="header__menue-button"><i class="fa-solid fa-bars fa-4x"></i></button>
+            <button type="submit" class="header__search-button"><i class="fa-solid fa-magnifying-glass fa-4x"></i></button>
         </nav>
     </header>
 
     <section class="book-hero"> 
         <article class="book-card"> 
             <p class="book-card__title">Book your stay with us today!</p>
-            <section class="book-card__dates book-card__in">
+            <section class="book-card__dates book-card__dates--in">
                 <p class="book-card__text">Check In</p>
                 <p class="book-card__date">27</p>
                 <p class="book-card__text">Nov</p>
             </section>
-            <section class="book-card__dates book-card__out">
+            <section class="book-card__dates book-card__dates--out">
                 <p class="book-card__text">Check Out</p>
                 <p class="book-card__date">02</p>
                 <p class="book-card__text">Dec</p>
@@ -47,9 +48,9 @@
         </article>
     </section> <!-- book-hero container end -->
 
-    <section class="room-title__container"> 
-        <p class="room-title">Availible Rooms</p>
-        <p class="room-subtitle">For the selected dates</p>
+    <section class="room-titles"> 
+        <p class="room-titles__title">Availible Rooms</p>
+        <p class="room-titles__subtitle">For the selected dates</p>
     </section>
 
    <article class="room-card">
@@ -58,8 +59,8 @@
     <p class="room-card__text">Inspired by Nordic forests, this room features recycled wood panels and a soothing cedarwood aroma. Large panoramic windows invite nature inside, while living plant walls purify the air. Textiles are made from organic cotton and linen, and a digital guide to forest bathing enhances relaxation.</p>
     <div class="room-card__icons">
         <i class="fa fa-bed fa-2x"></i> <!-- fontawesome icons --> 
-        <i class="fa fa-shower fa-2x"></i> <!-- fontawesome icons FUNKARV EJJJ!!!--> 
-        <i class="fa fa-clock fa-2x"></i> <!-- fontawesome icons --> 
+        <i class="fa fa-shower fa-2x"></i> <!-- fontawesome icons FUNKARV --> 
+        <i class="fa-solid fa-mug-hot fa-2x"></i> <!-- fontawesome icons --> 
     </div> 
     <button class="room-card__button">Read More</button>
    </article>
