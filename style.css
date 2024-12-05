@@ -6,6 +6,8 @@
     font-weight: lighter;
 }
 
+/* * {border:1px solid red} */
+
 /* ----- Header styling ----- */
 
 .header {
@@ -13,9 +15,11 @@
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
+
     display: flex;
+    flex-wrap: wrap;
     height: 150px;
-    width: 100%;
+    width: 100vw;
     align-items: center;
     background-color: #D9D9D9;
     opacity: 95%;
@@ -39,20 +43,16 @@
 .header__list-wrapper {
     width: 70%;
     display: flex;
-    align-items: center;
-    padding: 20px;
-    margin-left: 10em;
     align-items: flex-end;
 }
 
 .header__nav-list {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     list-style: none;
-    margin-left: 6em;
-    
+    margin-right: 3rem;
 }
 
 .header__nav-title {
@@ -63,24 +63,28 @@
     text-decoration: none;
     justify-content: center;
     align-items: center;
-    padding: 1em;
+    padding: 0 1em;
 
 }
 
-.header__search-button, .fa-search {
+.header__search-button, .header__menue-button {
+    display: none;
+    
     background-color: #D9D9D9;
     font-weight: lighter;
     float: right;
     height: 70px;
-    width: 70px;
+    width: auto;
     margin-right: 3rem;
     margin-top: 1rem;
     border: none;
 }
 
-.fa-search:hover {
+.header__search-button:hover {
     cursor: pointer;
 }
+
+
 
 
 /* ----**** LANDING PAGE ****----- */
@@ -93,6 +97,7 @@
     /* om jag vill ha svart gradient bakgrund på bilden*/
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))*/
 
+    width: 100%; 
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -141,7 +146,7 @@
 .landing-card {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
 }
 
 .landing-card__title {
@@ -157,8 +162,9 @@
 }
 
 .landing-card__image {
-    width: 100vw;
+    width: 70%;
     height: auto;
+    align-self: center;
 } 
 
 
@@ -221,8 +227,9 @@
     /* om jag vill ha svart gradient bakgrund på bilden*/
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))*/
 
+    overflow-x: hidden;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -271,11 +278,11 @@
     padding: 1em;
 }
 
-.book-card__in {
+.book-card__dates--in {
     grid-area: in;
 }
 
-.book-card__out {
+.book-card__dates--out {
     grid-area: out;
 }
 
@@ -313,19 +320,19 @@
 
 
 /* ---- Room Title ----- */
-.room-title__container {
+.room-titles {
     text-align: center;
     color: #181A20;
 
     margin: 3rem;
 }
 
-.room-title {
+.room-titles__title {
     font-size: 70px;
 }
 
-.room-subtitle {
-    font-size: 40px;
+.room-titles__subtitle {
+    font-size: 30px;
 }
 
 /* ---- Room Card ----- */
@@ -339,11 +346,13 @@
 }
 
 .room-card__image {
-    width: 100vw;
+        width: 70%;
+        height: auto;
+        align-self: center;
 }
 
 .room-card__name {
-    font-size: 70px;
+    font-size: 60px;
     padding: 3rem 25%;
     text-align: center;
 }
@@ -372,7 +381,7 @@
     border-radius: 1px;
     padding: 0.5em 3em;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .room-card__button:hover {
@@ -444,3 +453,87 @@
     max-height: 188px;
     margin-left: auto;
 }
+
+/* ------ MEDIA QUERIES smaller than 970px-----*/
+
+@media only screen and (max-width: 970px) {
+    .header__nav-list {
+        display: none;
+    }
+
+    .header__logo {
+        margin-left: 1rem;
+    }
+
+    .header__menue-button {
+        display: flex;
+
+        position: absolute;
+        top: 50%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+    }
+
+    .header__menue-button:hover {
+        cursor: pointer;
+    }
+
+
+    /* ABOUT PAGE */
+
+    .about__background {
+        padding: 3rem 1rem;
+        margin: 0 10%;
+        margin-top: 20%;
+    }
+
+    .about__title {
+        font-size: 40px;
+    }
+
+    .about__text {
+        font-size: 16px;
+        margin-bottom: 1rem;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__column1, .footer__column2, .footer__column3 {
+        text-align: center;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .footer__column2 {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__logo {
+        padding: 0;
+        margin: 0;
+    }
+
+    .fa-facebook, .fa-instagram {
+        margin: 0;
+        padding: 1rem;
+    }
+
+} /* ------ MEDIA QUERIES smaller than 970px END-----*/
+
+
+
+/* ------ MEDIA QUERIES Bigger than 971px-----*/
+
+@media only screen and (min-width: 971px) {
+    .header__search-button {
+        display: block;
+    }
+
+} /* ------ MEDIA QUERIES bigger than 970px END-----*/
