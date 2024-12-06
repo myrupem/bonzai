@@ -94,11 +94,7 @@
     cursor: pointer;
 }
 
-
-
-
 /* ----**** LANDING PAGE ****----- */
-
 /* ---- Hero styling ----- */
 
 .hero-image {
@@ -146,7 +142,6 @@
 
     cursor: pointer;
 }
-
 
 /* ---- Landing styling ----- */
 
@@ -216,9 +211,6 @@
 /* ---- Hero styling ----- */
 .book-hero {
     background-image: url("bonzai-assets/used assets/receptionists -Image by Rodrigo Salomón Cañas from Pixabay.avif");
-    
-    /* om jag vill ha svart gradient bakgrund på bilden*/
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))*/
 
     overflow-x: hidden;
     height: 100vh;
@@ -238,7 +230,7 @@
     "book book";
 
     column-gap: 10px;
-     row-gap: 10px;
+    row-gap: 10px;
 
     position: absolute;
     top: 50%;
@@ -246,7 +238,6 @@
     transform: translate(-50%, -50%);
 
     background-color: rgba(255, 255, 255, 0.5);
-    
     width: auto;
     height: auto;
     padding: 1em;
@@ -316,7 +307,6 @@
 .room-titles {
     text-align: center;
     color: #181A20;
-
     margin: 3rem;
 }
 
@@ -334,14 +324,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     margin-bottom: 3rem;
 }
 
 .room-card__image {
-        width: 70%;
-        height: auto;
-        align-self: center;
+    width: 70%;
+    height: auto;
+    align-self: center;
 }
 
 .room-card__name {
@@ -380,7 +369,6 @@
 .room-card__button:hover {
     background-color: #1F222A;
     opacity: 100%;
-
     cursor: pointer;
 }
 
@@ -402,7 +390,6 @@
     flex-wrap: wrap;
     min-width: 150px;
     display: flex;
-
     margin-right: 3rem;
 }
 
@@ -461,7 +448,6 @@
 
     .header__search-button {
         display: flex;
-
         position: absolute;
         top: 50%;
         left: 75%;
@@ -474,7 +460,6 @@
 
     .dropdown__button {
         display: flex;
-
         position: absolute;
         top: 50%;
         left: 90%;
@@ -516,7 +501,6 @@
         background-color: #b4b4b4;
     }
  
-
      /* LANDING PAGE */
     .hero-image {
         margin-bottom: 2rem;
@@ -530,7 +514,6 @@
      .hero__button {
         padding: 0.5em 3em;
         font-size: 20px;
-
         position: absolute;
         top: 85%;
         left: 50%;
