@@ -98,7 +98,7 @@
 /* ---- Hero styling ----- */
 
 .hero-image {
-    background-image: url("bonzai-assets/used assets/09-day.avif");
+    background-image: url("bonzai-assets/usedassets/09-day.avif");
     
     width: 100%; 
     height: 100vh;
@@ -174,7 +174,7 @@
 .about__image-background {
     width: 100%; 
     height: 100vh; 
-    background-image: url('bonzai-assets/used assets/08-day.avif');
+    background-image: url('bonzai-assets/usedassets/08-day.avif');
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 
@@ -210,7 +210,7 @@
 /* ----**** BOOK PAGE ****----- */
 /* ---- Hero styling ----- */
 .book-hero {
-    background-image: url("bonzai-assets/used assets/receptionists -Image by Rodrigo Salomón Cañas from Pixabay.avif");
+    background-image: url("bonzai-assets/usedassets/receptionists-Image-by-Rodrigo-Salomón-Cañas-from-Pixabay.avif");
 
     overflow-x: hidden;
     height: 100vh;
@@ -419,7 +419,7 @@
 }
 
 .footer__subtitle {
-    font-weight: 20px;
+    font-size: 20px;
     margin-bottom: 1em;
 }
 
