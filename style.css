@@ -6,8 +6,6 @@
     font-weight: lighter;
 }
 
-/* * {border:1px solid red} */
-
 /* ----- Header styling ----- */
 
 .header {
@@ -104,7 +102,7 @@
 /* ---- Hero styling ----- */
 
 .hero-image {
-    background-image: url("bonzai-assets/assets/photos/09-day.jpg");
+    background-image: url("bonzai-assets/used assets/09-day.avif");
     
     width: 100%; 
     height: 100vh;
@@ -181,7 +179,7 @@
 .about__image-background {
     width: 100%; 
     height: 100vh; 
-    background-image: url('bonzai-assets/assets/photos/08-day.jpg');
+    background-image: url('bonzai-assets/used assets/08-day.avif');
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 
@@ -217,7 +215,7 @@
 /* ----**** BOOK PAGE ****----- */
 /* ---- Hero styling ----- */
 .book-hero {
-    background-image: url("bonzai-assets/receptionists -Image by Rodrigo Salomón Cañas from Pixabay.jpg");
+    background-image: url("bonzai-assets/used assets/receptionists -Image by Rodrigo Salomón Cañas from Pixabay.avif");
     
     /* om jag vill ha svart gradient bakgrund på bilden*/
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))*/
@@ -247,8 +245,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    background-color: #F5F5FF;
-    opacity: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    
     width: auto;
     height: auto;
     padding: 1em;
@@ -618,8 +616,6 @@
 
 } /* ------ MEDIA QUERIES smaller than 970px END-----*/
 
-
-
 /* ------ MEDIA QUERIES Bigger than 971px-----*/
 
 @media only screen and (min-width: 971px) {
@@ -644,7 +640,6 @@
     }
 
 } /* ------ MEDIA QUERIES bigger than 970px END-----*/
-
 
 @media only screen and (min-width: 1200px) {
     .about__background {
